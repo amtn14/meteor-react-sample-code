@@ -1,0 +1,90 @@
+<!-- Company Admin has added a new employee to host shadowers/be the admin 
+    - let's inform the company of what they've done (receipt)! -->
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;" >
+        <!-- COPY -->
+        <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 20px 30px 40px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;" >
+            <p style="margin: 0;"></p>
+        </td>
+        </tr>
+        <!-- BULLETPROOF BUTTON -->
+        <tr>
+        <td bgcolor="#ffffff" align="center" style="padding:10px;">
+            <table bgcolor="#fefefe" width="70%" border="1" cellspacing="2" cellpadding="5">
+                <tr>
+                    <td>First Name</td>
+                    <td>{{ firstName }}</td>
+                </tr>
+                <tr>
+                    <td>Middle Name</td>
+                    <td>{{ middleName }}</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>{{ lastName }}</td>
+                </tr>
+                <tr>
+                    <td>Email Address</td>
+                    <td>{{ email }}</td>
+                </tr>
+                <tr>
+                    <td>Roles</td>
+                    <td>{{ roles }}</td>
+                </tr>
+                <tr>
+                    <td>Currently Active?</td>
+                    <td>{{ isActive }}</td>
+                </tr>
+                <tr>
+                    <td>Current Job Title</td>
+                    <td>{{ jobTitle }}</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>{{ phoneNum }}</td>
+                </tr>
+                <tr>
+                    <td>Phone Number Ext</td>
+                    <td>{{ phoneNumExt }}</td>
+                </tr>
+                <tr>
+                    <td>Phone Number Type</td>
+                    <td>{{ phoneNumType }}</td>
+                </tr>
+
+            </table>
+            <br />
+            <p>
+                Please verify this information and if you see any mistakes, 
+                <br/> 
+                you can make the changes on your dashboard! 
+                <br/>
+                The listed employee will also be receiving an email notification 
+                <br/>
+                on how to sign up on Betagig and access their dashboard!
+            </p> 
+            <br/><br /><br />
+        </td>
+        </tr>
+
+        <tr>
+            <td bgcolor="#ffffff" align="center">
+                <table style="max-width:200px;">
+                    <tr>
+                    <td width="200" align="center" style="border-radius: 3px;" bgcolor="#E65100">
+                        <a href="{{ baseUrl }}dashboard" target="_blank" style="font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; padding: 15px; border-radius: 2px; border: 1px solid #E65100; display: inline-block;">MY DASHBOARD</a>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br /><br />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+    </table>
+

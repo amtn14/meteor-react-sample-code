@@ -1,0 +1,44 @@
+@import "../../stylesheets/variables.less";
+.side-nav {
+    margin-top: 50px;
+    .side-nav-item.active {
+        text-decoration: underline;
+        font-weight: 400;
+    }
+
+    div.side-nav-item {
+        padding: 10px;
+    }
+
+    button.side-nav-item {
+        margin-top: 10px;
+    }
+}
+
+.main-content {
+    margin-top: 30px;
+    .employee-view-header-container {
+        
+    }
+    .employee-view-body-container {
+        .employee-info-container, .employee-form-container {
+            min-height: 500px;
+        }
+        input.isDeactivatedCheckbox {
+            margin-left: 5px;
+        }
+      .employee-index-component {
+        .how-to-edit-and-view-alert {
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+        .tr-deactivated {
+          color: @brand-orange-dark;
+          font-weight: 400;
+        }
+        tr:hover {
+          background-color: @brand-gray-light;
+        }
+      }
+    }
+}

@@ -1,0 +1,272 @@
+@import '../../../stylesheets/variables.less';
+//stylesheet is being used by user-signup + dashboard profile 
+
+.user-form-wrapper {
+  //font-family: "Gotham SSm", sans-serif;
+  font-weight: lighter;
+  color: @brand-gray-med;   //#505050
+  text-align: center; //centers the stepzilla progress bar
+
+  .signup-step-container {
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .add-additional-btn {
+      margin-left: 10px;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    form label {
+      text-align: left;
+    }
+
+    .form-group {
+      text-align: left;
+    }
+
+    .switch-button {
+      .input + .toggle {
+        width: 65px !important;
+      }
+    }
+
+    .experience-level-container, .education-level-container {
+      position: relative;
+
+      .switch-button-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+
+    //Step 1. Basic Information (user signup)
+    &.basic-info-container {
+      .password-instructions {
+        text-align: left;
+      }
+    }
+
+
+    //Step 2. Personal Info (user signup)
+    &.personal-info-container {
+
+    }
+
+
+    //Step 3. Education (user signup)
+    &.education-container {
+      .add-education-header {
+        text-align: center;
+
+        .add-additional-btn {
+          margin-left: 5px;
+          border-radius: 50%;
+        }
+
+        .add-additional-btn:focus {
+          outline: 0;
+          background-color: @brand-white;
+        }
+      }
+
+      .remove-education-container {
+
+        .remove-education-btn {
+          float: right;
+        }
+      }
+    }
+
+
+    //Step 4. Job History + Skills (user signup)
+    &.job-history-and-skills-container {
+      .job-edit, .job-add {
+        text-align: left;
+        margin-bottom: 10px;
+
+        .add-job-history-header {
+          text-align: center;
+
+          .add-additional-btn {
+            border-radius: 50%;
+            margin-left: 5px;
+          }
+
+          .add-additional-btn:focus {
+            outline: 0;
+            background-color: @brand-white;
+          }
+        }
+
+        .remove-job-container {
+
+          .remove-job-btn {
+            float: right;
+          }
+        }
+      }
+
+      .language-container,
+      .veteran-container,
+      .demographic-container {
+
+        text-align: left;
+
+        .small {
+          margin-top: 5px;
+        }
+
+        .ethnicity-container {
+          margin-left: -10px;
+
+          .radio-inline, .checkbox-inline{
+            padding-right: 40px;
+            padding-top: 10px;
+            margin-left: 10px;
+
+          }
+        }
+      }
+    }
+
+
+    //Step 5. Roles + Experience (user signup)
+    &.roles-and-experience-container {
+      .roles-and-exp-label {
+
+        text-align:left;
+
+        .accepted-files-list {
+          font-size: 12px;
+        }
+
+        .fa.fa-question-circle-o{
+          padding-left:5px;
+        }
+      }
+
+      .uploaded-files-header {
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .uploaded-files-container {
+
+        i {
+          color: @brand-gray-med;   //#474644
+          padding-right: 15px;
+          cursor: pointer;
+        }
+      }
+
+      .link-wrapper {
+        position: relative;
+
+        .linkFaIcon {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+
+      }
+    }
+
+
+    //Step 6. Upload Profile Picture (user signup)
+    &.upload-picture-container {
+      .tip-for-profile-photo {
+        font-size: 12px;
+        padding-left: 5px;
+        margin-bottom: 10px;
+      }
+    }
+
+    //Company signup - company logo & profile images - step 5 + 6
+    &.logos-and-images-container {
+      .dz-default.dz-message {
+        max-height: 200px;
+        overflow: auto;
+        img.user-has-not-uploaded-photo {
+          height: 64px;
+          width: 64px;
+        }
+        img.user-has-uploaded-photo {
+          padding-bottom: 15px;
+        }
+      }
+      .filepicker.dropzone.dz-clickable.dz-started {
+        height: 185px;
+        overflow-y: auto;
+      }
+      .tip-for-company-images {
+        font-size: 12px;
+        padding-left: 5px;
+        margin-bottom: 10px;
+      }
+    }
+
+    //** LIBRARY STYLINGS **//
+
+    //DROPZONE Styling
+    div.filepicker {
+      background-color: @brand-white;
+      border-style: solid;
+      border-width: 1px;
+    }
+
+    .dz-img {
+      max-width: 175px;
+      max-height: 200px;
+      padding-bottom: 10px;
+    }
+
+    //LOCATION Dropdown Styling (on focus) - library: 'react-geosuggest'
+    .geosuggest {
+      width: 100%;
+    }
+
+    .geosuggest__input:focus {
+      border: 1px solid #66afe9;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    }
+
+    .geosuggest__suggests--hidden {
+      border: none !important;
+    }
+
+    //TYPEAHEAD Stylings
+    .rbt-input {
+      text-align:left;
+    }
+
+    .rbt-aux .rbt-close {
+      margin-top: -10px;
+    }
+
+    //lyef switch button stylings
+    .input:checked + .toggle, .input:checked + .toggle:after {
+      background-color: @brand-green;
+    }
+
+  }
+
+  .agreements-container {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  @media @breakpoint-xs {
+    .skip-current-step-btn {
+      margin-bottom: 10px;
+    }
+  }
+}
